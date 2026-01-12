@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility & Best Practices</title>
+</head>
+<body>
+
+    <!-- ACCESSIBLE NAVIGATION -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#nav">Navigation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- FORM WITH PROPER LABELS -->
+    <section id="form">
+        <h2>Accessible Form</h2>
+
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- IMAGE WITH ALT -->
+    <section id="image">
+        <h2>Image with Alt Text</h2>
+
+        <img src="campus.jpg" alt="College campus building with trees and students">
+
+        <p>
+            <strong>Importance of alt attribute:</strong><br>
+            The <code>alt</code> text describes the image for screen readers, 
+            helps visually impaired users understand the content, 
+            and is displayed if the image fails to load.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- ACCESSIBLE NAVIGATION DETAILS -->
+    <section id="nav">
+        <h2>Accessible Navigation Menu</h2>
+
+        <p>
+            This navigation uses semantic <code>&lt;nav&gt;</code> and 
+            anchor links. Users can move through the menu using the 
+            <strong>Tab</strong> key, ensuring proper keyboard navigation.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Accessibility Demo</p>
+    </footer>
+
+</body>
+</html>

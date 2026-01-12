@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms and Input Elements</title>
+</head>
+
+<body id="top">
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <!-- Text, Email, Password -->
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="python"> Python
+        <br><br>
+
+        <!-- Dropdown -->
+        <label>Course:</label><br>
+        <select name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="ece">ECE</option>
+        </select>
+        <br><br>
+
+        <!-- Min & Max -->
+        <label>Age:</label><br>
+        <input type="number" min="18" max="30" required>
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+
+    <h1>Feedback Form</h1>
+
+    <form>
+        <!-- Text Area -->
+        <label>Your Feedback:</label><br>
+        <textarea rows="4" cols="40" required></textarea>
+        <br><br>
+
+        <!-- Rating -->
+        <label>Rating:</label><br>
+        1
+        <input type="range" min="1" max="5">
+        5
+        <br><br>
+
+        <input type="submit" value="Send Feedback">
+    </form>
+
+</body>
+</html>
